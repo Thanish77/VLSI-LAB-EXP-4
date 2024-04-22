@@ -37,6 +37,7 @@ COUNTER
 
   
 PROCEDURE:
+```
 STEP:1  Start  the Xilinx navigator, Select and Name the New project.
 STEP:2  Select the device family, device, package and speed.       
 STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
@@ -48,10 +49,10 @@ STEP:8  Select Check Syntax from the Synthesize  XST Process. Double Click in th
 STEP:9  In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu.
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
+```
 
 VERILOG CODE
-
-
+```
 SR FLIPFLOP:
 module srff(s,r,clk,reset,q);
 input s,r,clk,reset;
@@ -72,8 +73,10 @@ endcase
 end 
 end
 endmodule
+```
 
 JK FLIPFLOP:
+```
 module jk_ff(j,k,clk,reset,q);
 input j,k,clk,reset;
 output reg q;
@@ -93,8 +96,10 @@ endcase
 end 
 end
 endmodule
+```
 
 T FLIPFLOP:
+```
 module tff(clk,rst,j,q);
 input clk,rst,j;
 output reg q;
@@ -107,8 +112,10 @@ default=q=1'b0;
 endcase
 end
 endmodule
+```
 
 D FLIPFLOP:
+```
 module dff(clk,rst,d,q);
 input clk,rst,d;
 output reg q;
@@ -120,6 +127,7 @@ else
 q=d;
 end
 endmodule
+```
 
 OUTPUT WAVEFORM
  
@@ -137,8 +145,7 @@ D FLIPFLOP:
 
 
 
-RESULT
-
-Hence thus given To simulate and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN using vivado
+RESULT:
+      Hence thus given To simulate and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN using vivado
 
 
